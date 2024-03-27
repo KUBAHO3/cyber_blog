@@ -5,7 +5,7 @@ import "./CustomMaterial"
 import { useBlock } from "../blocks"
 import state from "../store"
 
-const Plane = forwardRef(({ color = "white", shift = 1, opacity = 1, args, map, ...props }, ref) => {
+const Plane = forwardRef(({ color = "violet", shift = 1, opacity = 1, args, map, ...props }, ref) => {
   const { viewportHeight, offsetFactor } = useBlock()
   const material = useRef()
   let last = state.top.current

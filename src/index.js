@@ -79,7 +79,7 @@ function Content() {
         </Block>
       ))}
       <Block factor={1.25} offset={8}>
-        <Html style={{ color: "white" }} className="bottom-left" position={[-canvasWidth / 2, -canvasHeight / 2, 0]}>
+        <Html style={{ color: "violet" }} className="bottom-left" position={[-canvasWidth / 2, -canvasHeight / 2, 0]}>
           Culture is not your friend.
         </Html>
       </Block>
