@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap");
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 *,
 *::after,
 *::before {
@@ -18,7 +20,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #0c0f13;
+  background: #ebebeb;
   overflow: hidden;
   font-family: "Sulphur Point", sans-serif;
   color: #8b8b8b;
