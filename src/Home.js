@@ -38,9 +38,9 @@ function Startup() {
             {header}
           </Text>
           <Block factor={0.2}>
-            {/* <Text opacity={0.5} size={w * 0.5} color="#fafafa" position={[((left ? w : -w) / 2) * size, (w * size) / aspect / 1, -10]}>
-              {"0" + (index + 1)}
-            </Text> */}
+            <Text opacity={0.5} size={w * 0.5} color="#fafafa" position={[((left ? w : -w) / 2) * size, (w * size) / aspect / 1, -10]}>
+              {/* {"0" + (index + 1)} */}We
+            </Text>
           </Block>
         </group>
       </Block>
@@ -95,8 +95,8 @@ function Home() {
     useEffect(() => void onScroll({ target: scrollArea.current }), [])
     return (
       <>
-        <Canvas linear dpr={[1, 2]} orthographic camera={{ zoom: state.zoom, position: [0, 0, 500] }}>
-          <Suspense fallback={<Html center className="loading" children="Loading..." />}>
+        <Canvas linear dpr={[1, 2]} orthographic camera={{ zoom: state.zoom, position: [0, 0, 500] }} ref={scrollArea} onScroll={onScroll}>
+          <Suspense fallback={<Html center className="loading" children="Hey There..." />}>
             <Content />
             <Diamonds />
             <Startup />
