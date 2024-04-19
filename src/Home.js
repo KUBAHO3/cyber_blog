@@ -8,6 +8,7 @@ import Diamonds from "./diamonds/Diamonds"
 import Plane from "./components/Plane"
 import { Block, useBlock } from "./blocks"
 import state from "./store"
+import { Link } from "react-router-dom"
 
 function Startup() {
     const ref = useRef()
@@ -15,7 +16,7 @@ function Startup() {
     return <Plane ref={ref} color="#cececf" position={[0, 0, 200]} scale={[100, 100, 1]} />
   }
   
-  function Paragraph({ image, index, offset, factor, header, aspect, text }) {
+  function Paragraph({ image, index, offset, factor, header, aspect, link, text }) {
     const { contentMaxWidth: w, canvasWidth, margin, mobile } = useBlock()
     const size = aspect < 1 && !mobile ? 0.65 : 1
     const alignRight = (canvasWidth - w * size - margin) / 2
@@ -30,6 +31,8 @@ function Startup() {
             style={{ width: pixelWidth / (mobile ? 1 : 2), textAlign: left ? "left" : "right" }}
             position={[left || mobile ? (-w * size) / 2 : 0, (-w * size) / 2 / aspect - 0.4, 1]}>
             <div tabIndex={index}>{text}</div>
+            <a href={link} className="text-blue-400 underline cursor-pointer">Learn more</a>
+            {/* <Link to="/services" className="text-blue-400">Learn More</Link> */}
           </Html>
           <Text left={left} right={!left} size={w * 0.04} color={color} top position={[((left ? -w : w) * size) / 2, (w * size) / aspect / 2 + 0.5, -1]}>
             {header}

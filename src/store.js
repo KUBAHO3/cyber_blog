@@ -12,6 +12,7 @@ const state = {
       header: "Introduction",
       image: "/img1.png",
       aspect: 1.51,
+      link: "/about_us",
       text: "Two thousand pharmacologists and bio-chemists were subsidized. Six years later it was being produced commercially."
     },
     {
@@ -20,6 +21,7 @@ const state = {
       header: "Location",
       image: "/img2.png",
       aspect: 1.5,
+      link: "/location",
       text:
         "The man who comes back through the Door in the Wall will never be quite the same as the man who went out. He will be wiser but less sure, happier but less self-satisfied, humbler in acknowledging his ignorance yet better equipped to understand the relationship of words to things, of systematic reasoning to the unfathomable mystery which it tries, forever vainly, to comprehend."
     },
@@ -29,6 +31,7 @@ const state = {
       header: "services",
       image: "/img3.png",
       aspect: 1.5037,
+      link: "/services",
       text:
         "The substance can take you to heaven but it can also take you to hell. Or else to both, together or alternately. Or else (if you're lucky, or if you've made yourself ready) beyond either of them. And then beyond the beyond, back to where you started from — back to here, back to New Rotham sted, back to business as usual. Only now, of course, business as usual is completely different."
     },
@@ -38,6 +41,7 @@ const state = {
       header: "contact",
       image: "/img4.png",
       aspect: 0.665,
+      link: "/contact_us",
       text:
         "We’ve found that the people whose EEG doesn’t show any alpha-wave activity when they’re relaxed aren’t likely to respond significantly to the substance. That means that, for about fifteen percent of the population, we have to find other approaches to liberation."
     },
@@ -47,6 +51,7 @@ const state = {
       header: "Testmonies",
       image: "/img5.png",
       aspect: 1.55,
+      link: "/testmonies",
       text:
         "By cultivating the state of mind that makes it possible for the dazzling ecstatic insights to become permanent and habitual illuminations. By getting to know oneself to the point where one won’t be compelled by one’s unconscious to do all the ugly, absurd, self-stultifying things that one so often finds oneself doing."
     },
